@@ -9,3 +9,4 @@ variable "acm" {}
 variable "not_found_page" {}
 variable "project" {}
 variable "environment" {}
+variable "www_default" {}

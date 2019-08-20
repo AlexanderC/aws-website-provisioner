@@ -30,8 +30,8 @@ Apply complete! Resources: 4 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-cname = dw12eyh8cr9l6.cloudfront.net
-www_cname = d1edkxy4vi8byf.cloudfront.net
+cname = d1edkxy4vi8byf.cloudfront.net
+www_cname = dw12eyh8cr9l6.cloudfront.net
 ```
 
 To complete setup, take the values of `cname` and `www_cname` and add these as DNS entries (e.g. for `vaxseen.co` website):
