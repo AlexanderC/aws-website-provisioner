@@ -62,4 +62,14 @@ example.com CNAME ${cname} / cache=3600
 www.example.com CNAME ${www_cname} / cache=3600
 ```
 
-To deploy your website use `website_deployer` IAM user and CLI tools provided by AWS, or simply do it through AWS Console.
+### Uploading Website Assets
+
+For uploading website assets you might use [novemberfiveco/s3-site-cache-optimizer](https://github.com/novemberfiveco/s3-site-cache-optimizer) which will optimize S3 objects properties besides uploading them.
+
+Example usage:
+
+```
+s3-site-cache-optimizer dist/ ${TF_VAR_bucket} --access-key XXXXXNOVEMBERFIVEXXXXX --secret-key XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+> In the example above `XXXXXNOVEMBERFIVEXXXXX` and `XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX` are the credentials for `${TF_VAR_deployer}` IAM user.
